@@ -9,7 +9,9 @@ public class GPA {
 		int phy = sd.nextInt();
 
 		double gpa1 = 0, gpa2 = 0, gpa3 = 0, gpa4 = 0, gpa5 = 0;
+		// physics running here
 
+	if (phy >= 0 && phy <= 100) {
 		if (phy >= 70 && phy <= 100) {
 			System.out.println("A");
 			System.out.println("Pass");
@@ -22,26 +24,24 @@ public class GPA {
 			System.out.println("B");
 			System.out.println("Pass");
 			gpa1 = 4;
-		}
-
-		else if (phy >= 40 && phy <= 49) {
+		} else if (phy >= 40 && phy <= 49) {
 			System.out.println("C");
 			System.out.println("Pass");
 			gpa1 = 3;
 		} else if (phy >= 30 && phy <= 39) {
 			System.out.println("D");
-			System.out.println("Suplimentary");
+			System.out.println("Supplementary");
 			gpa1 = 2;
-
 		} else if (phy >= 0 && phy <= 29) {
 			System.out.println("E");
-			System.out.println("Suplimentary");
+			System.out.println("Supplementary");
 			gpa1 = 1;
-
 		} else {
 			System.out.println("check your data and try again");
 		}
+	}
 
+		// chemistry running here
 		System.out.println("Chemistry");
 		int chem = sd.nextInt();
 
@@ -65,17 +65,17 @@ public class GPA {
 			gpa2 = 3;
 		} else if (chem >= 30 && chem <= 39) {
 			System.out.println("D");
-			System.out.println("Suplimentary");
+			System.out.println("Supplementary");
 			gpa2 = 2;
 		} else if (chem >= 0 && chem <= 29) {
 			System.out.println("E");
-			System.out.println("Suplimentary");
+			System.out.println("Supplementary");
 			gpa2 = 1;
-
 		} else {
 			System.out.println("Check your data and try again");
 		}
-
+	
+		// biology running here
 		System.out.println("Biology");
 		int bio = sd.nextInt();
 
@@ -99,17 +99,18 @@ public class GPA {
 			gpa3 = 3;
 		} else if (bio >= 30 && bio <= 39) {
 			System.out.println("D");
-			System.out.println("Suplimentary");
+			System.out.println("Supplementary");
 			gpa3 = 2;
 		} else if (bio >= 0 && bio <= 29) {
 			System.out.println("E");
-			System.out.println("Suplimentary");
+			System.out.println("Supplementary");
 			gpa3 = 1;
 
 		} else {
 			System.out.println("Check your data and try again");
 		}
 
+		// mathematic running here
 		System.out.println("Mathematics");
 		int math = sd.nextInt();
 
@@ -133,17 +134,18 @@ public class GPA {
 			gpa4 = 3;
 		} else if (math >= 30 && math <= 39) {
 			System.out.println("D");
-			System.out.println("Suplimentary");
+			System.out.println("Supplementary");
 			gpa4 = 2;
 		} else if (math >= 0 && math <= 29) {
 			System.out.println("E");
-			System.out.println("Suplimentary");
+			System.out.println("Supplementary");
 			gpa4 = 1;
 
 		} else {
 			System.out.println("Check your data and try again");
 		}
 
+		// english running here
 		System.out.println("English");
 		int eng = sd.nextInt();
 
@@ -167,11 +169,11 @@ public class GPA {
 			gpa5 = 3;
 		} else if (eng >= 30 && eng <= 39) {
 			System.out.println("D");
-			System.out.println("Suplimentary");
+			System.out.println("Supplementary");
 			gpa5 = 2;
 		} else if (eng >= 0 && eng <= 29) {
 			System.out.println("E");
-			System.out.println("Suplimentary");
+			System.out.println("Supplementary");
 			gpa5 = 1;
 
 		} else {
@@ -181,19 +183,19 @@ public class GPA {
 		double GPA;
 
 		// CREDIT
-		int phygrade = 4;
-		int chemgrade = 3;
-		int biograde = 3;
-		int mathgrade = 4;
-		int enggrade = 3;
+		int phy_grade = 4;
+		int chem_grade = 3;
+		int bio_grade = 3;
+		int math_grade = 4;
+		int eng_grade = 3;
 
-		int totalgrade;
+		int total_grade;
 		// calculating total grade
 
-		totalgrade = phygrade + chemgrade + biograde + mathgrade + enggrade;
+		total_grade = phy_grade + chem_grade + bio_grade + math_grade + eng_grade;
 
-		GPA = ((gpa1 * phygrade) + (gpa2 * chemgrade) + (gpa3 * biograde) + (gpa4 * mathgrade) + (gpa5 * enggrade))
-				/ totalgrade;
+		GPA = ((gpa1 * phy_grade) + (gpa2 * chem_grade) + (gpa3 * bio_grade) + (gpa4 * math_grade) + (gpa5 * eng_grade))
+				/ total_grade;
 
 		System.out.println("GPA is " + GPA);
 
@@ -211,6 +213,7 @@ public class GPA {
 			System.out.println("Pass");
 		}
 
+		sd.close();
 	}
 
 }
