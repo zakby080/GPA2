@@ -9,6 +9,11 @@ public class GPA {
 		int phy = sd.nextInt();
 
 		double gpa1 = 0, gpa2 = 0, gpa3 = 0, gpa4 = 0, gpa5 = 0;
+		
+		if (phy>100 || phy <0) {
+			System.out.print("enter the correct marks and run again");
+			System.exit(1);
+		}
 		// physics running here
 
 		if (phy >= 0 && phy <= 100) {
@@ -45,6 +50,11 @@ public class GPA {
 		System.out.println("Chemistry");
 		int chem = sd.nextInt();
 
+		if (chem>100 || chem <0) {
+			System.out.print("enter the correct marks and run again");
+			System.exit(1);
+		}
+
 		if (chem >= 0 && chem <= 100) {
 			if (chem >= 70 && chem <= 100) {
 				System.out.println("A");
@@ -79,6 +89,11 @@ public class GPA {
 		System.out.println("Biology");
 		int bio = sd.nextInt();
 
+		
+		if (bio > 100 || bio < 0) {
+			System.out.print("enter the correct marks and run again");
+			System.exit(1);
+		}
 		if (bio >= 0 && bio <= 100) {
 			if (bio >= 70 && bio <= 100) {
 				System.out.println("A");
@@ -114,6 +129,11 @@ public class GPA {
 		System.out.println("Mathematics");
 		int math = sd.nextInt();
 
+		
+		if (math > 100 || math < 0) {
+			System.out.print("enter the correct marks and run again");
+			System.exit(1);
+		}
 		if (math >= 0 && math <= 100) {
 			if (math >= 70 && math <= 100) {
 				System.out.println("A");
@@ -149,6 +169,11 @@ public class GPA {
 		System.out.println("English");
 		int eng = sd.nextInt();
 
+		
+		if (eng>100 || eng < 0) {
+			System.out.print("enter the correct marks and run again");
+			System.exit(1);
+		}
 		if (eng >= 0 && eng <= 100) {
 			if (eng >= 70 && eng <= 100) {
 				System.out.println("A");
