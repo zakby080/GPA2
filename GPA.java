@@ -192,6 +192,11 @@ public class GPA {
 		int total_grade;
 		// calculating total grade
 
+
+/*if (phy_grade == ' ' || chem_grade==' ' || bio_grade==' ' || math_grade==' ' eng_grade ==' ') {
+	System.out.print("error data");
+}  test of modification
+*/
 		total_grade = phy_grade + chem_grade + bio_grade + math_grade + eng_grade;
 
 		GPA = ((gpa1 * phy_grade) + (gpa2 * chem_grade) + (gpa3 * bio_grade) + (gpa4 * math_grade) + (gpa5 * eng_grade))
